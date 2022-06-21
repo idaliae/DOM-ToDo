@@ -8,16 +8,18 @@ h1 {
     text-align: center;
 }
 
-.to-dos {
-    margin-top: 30px;
+.to-dos::after {
+    margin-top: 20px;
+    content: "\a";
+    white-space: pre;
 }
 
 .paragraph-styling {
-    margin: 0;
+    margin: 10;
     cursor: pointer;
     font-size: 20px;
 }
 
-#toDoContainer {
+/* #toDoContainer {
     text-align: center;
-}
+} */

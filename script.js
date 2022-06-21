@@ -4,7 +4,7 @@
 // Variables
 const addToDoButton = document.getElementById('addToDo');
 const toDoContainer = document.getElementById('toDoContainer');
-const inputField = document.getElementById('inputField')
+const inputField = document.getElementById('inputField');
 
 
 // Event Listeners
@@ -12,6 +12,7 @@ addToDoButton.addEventListener('click', function() {
     const paragraph = document.createElement('p');
     paragraph.classList.add('paragraph-styling');
     paragraph.innerText = inputField.value;
+    // paragraph.style.pageBreakAfter = "always";
     toDoContainer.appendChild(paragraph);
     inputField.value = "";
     paragraph.addEventListener('click', function() {
